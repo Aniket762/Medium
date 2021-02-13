@@ -64,7 +64,8 @@ export class Blog extends Component {
 
     if (this.state.item) {
       post = this.state.item.map((post, index) => (
-        <ShowBlog key={index} {...post} {...this.state.profile} {...index} />
+        // pass url as ural
+        <ShowBlog key={index} {...post} ural={post.link} {...this.state.profile} {...index} />
       ))
     }
    
