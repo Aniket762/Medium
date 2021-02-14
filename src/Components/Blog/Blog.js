@@ -64,7 +64,7 @@ export class Blog extends Component {
 
     if (this.state.item) {
       post = this.state.item.map((post, index) => (
-        <ShowBlog key={index} {...post} {...this.state.profile} {...index} />
+        <ShowBlog key={index} {...post}  {...this.state.profile} {...index} />
       ))
     }
    
