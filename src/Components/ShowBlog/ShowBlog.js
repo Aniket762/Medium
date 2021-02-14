@@ -29,12 +29,14 @@ function ShowBlog(props, p) {
         <div className="card-body">
           <h5 className="card-title">
             
-          <a
-              href={props.link}
-              className={c.textfiordblue}
-            >
-              {props.title}
-            </a>
+          <Link
+            to={{
+              pathname: props.title,
+            }}
+          >
+          {props.title}
+
+          </Link>
           </h5>
 
           <p className={c.cardText}>{`${ToText(
